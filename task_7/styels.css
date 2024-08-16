@@ -1,0 +1,131 @@
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.course-card {
+    width: 30%;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.course-details {
+    padding: 20px;
+}
+
+
+.course-title {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.instructor-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.course-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.course-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-top: 30px;
+}
+
+.new-price {
+    color: #e74c3c;
+    font-weight: bold;
+    position: absolute;
+    left: 70px;
+    margin-top: 30px;
+}
+
+.stars {
+    color: #f69e1e;
+}
+
+.reviews {
+    position: absolute;
+    top:226px;
+    left: 135px;
+}
+.student {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-left:solid #7b7b7b 1px;
+    border-radius: 0 10% 10% 0;
+    position: absolute;
+    left: 101px;
+}
+.lessons {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-right:solid #7b7b7b 1px;
+    border-radius: 10% 0 0 10%;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: 10%;
+    margin-left: -7px;
+    opacity: 0.5;    
+}
+
+i {
+    position: absolute;
+    right: 30px;
+    top:230px;
+    width: 40px;
+    height: 40px;
+    
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #818181;
+    color: #e0e0e0;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.5;
+}

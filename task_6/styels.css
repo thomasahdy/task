@@ -1,0 +1,96 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    font-size: 50px;
+    color :#000000;
+    font-family: "Roboto", sans-serif;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.container {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    
+}
+
+
+.gallery {
+    height: 600px;
+    margin: 0 100px;
+    padding-left:200px;
+    padding-right: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.System {
+    margin: 10px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 300px;
+    width: 500px;
+    line-height: 20px;
+    background-color: #454961;
+    color: #fff;
+    position: relative;
+}
+p {
+    padding-top: 20px;
+    color: #b7c2c2;
+}
+.title {
+    padding-top: 10px;
+    color: #b7c2c2;
+}
+h2 {
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.gallery .System img {
+    height: 100px;
+    object-fit: cover;
+    width: 100px;
+}
+.container .gallery .System .img_cv {
+    position: absolute;
+    border-radius: 50%;
+    
+    top: -50px ;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.stars {
+    color: yellow;
+}
+
+.icon {
+    position: absolute;
+    border-radius: 50%;
+    bottom: -35px;
+    right: 30px;
+    max-width: 75px;
+    max-height: 75px;
+}
+.lastelemant {
+    position: absolute;
+    bottom: 20px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+

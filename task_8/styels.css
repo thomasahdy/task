@@ -1,0 +1,94 @@
+body{
+    margin: 0; 
+    
+}
+
+h1 {
+    font-size: 50px;
+    color :#fff;
+    font-family: "Roboto", sans-serif;
+    margin-top: 60px;
+
+}
+
+.container {
+    background-image: url(assets/360_F_488346626_INSWXuvdlHoR8mdbJdCW9i6DysHCAm3a.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    isolation: isolate;
+    
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: #6f3fe0;
+    opacity: .9;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.content {
+    color: #FFF;
+    padding-top: 60px;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+h1 {
+    font-size: 70px;
+    font-style: italic;
+}
+.description {
+    padding-right: 400px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.store_shap {
+    
+    border: 3px solid white ;
+    width: 200px;
+    height: 50px;
+    
+    border-radius: 5%;
+    position: relative;
+}
+.store_shap > p {
+    font-size: 7px;
+    padding-left: 55px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    margin: 0;
+    
+}
+.store_shap > h3{
+    margin: 0;
+    padding-left: 55px;
+    padding-top: 0;
+}
+
+i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 35px;
+}
+.left {
+    margin-left: 10px;
+}

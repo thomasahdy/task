@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+h1 {
+    color : #f7bf36;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+}
+h1::before {
+    content: "ABOUT";
+    color: black;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 2px;
+    left: 210px;
+    top: 140px;
+    background-color: #f7bf36;
+}
+h2 {
+    color: #73645d;
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+    color: #9b8f85;
+}
+article {
+    float: left;
+}
+.container_1 {
+    width: 60%;
+    padding: 20px 20px 150px 200px;
+}
+.container_2 {
+    width: 40%;
+    padding: 30px 50px;
+}
+img {
+    height: 500px;
+}
+.stroke::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 500px;
+    background-color:#f7bf36 ;
+    right: 213px;
+    top: 48px;
+}
+.stroke_1::after {
+    content: "";
+    position: absolute;
+    width: 410px;
+    height: 10px;
+    background-color:#f7bf36 ;
+    right: 213px;
+    top: 538px;
+}
+ul {
+    column-count: 2;
+    padding: 0;
+}
+li {
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 0 5px 30px; /* Add space for the custom marker */
+    position: relative;
+}
+li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:#f7bf36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li::after {
+    content: '✔';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #fff;
+}
+
+button {
+    background-color: #f7bf36;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}

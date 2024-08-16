@@ -1,0 +1,114 @@
+body{
+    margin: 0; 
+    
+}
+.Header {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    color :#fff;
+    font-family: "Roboto", sans-serif;
+    margin-top: 60px;
+
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 4%;
+    height: 2px;
+    left: 50%;
+    margin-left: -50px;
+    top: 140px;
+    background-color: #f7bf36;
+}
+.container {
+    background-image: url(assets/adobestock-65806888_2_orig.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    min-height: 600px;
+    isolation: isolate;
+    
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: rgb(69, 69, 69);
+    opacity: .7;
+}
+
+.gallery {
+    height: 600px;
+    margin: 0 100px;
+    padding-left:200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.System {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr ; 
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+}
+.System img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    grid-column: 1 / 3 ;
+    
+}
+
+.System h2,p {
+    padding-left: 20px ;
+}
+.time {
+    position: absolute;
+    top : 373px;
+    padding: 5px;
+    border-radius: 10%;
+    margin-left: 150px;
+    object-position: center;
+    background-color: #53b44f;
+    color: #fff;
+    font-size: 15px;
+}
+.description {
+    font-size: 15px;
+    padding-top: 0;
+    grid-row: 3;
+    margin: 0;
+    grid-column: 1 / 3 ;
+    
+    
+}
+h2 {
+    padding: 0;
+    margin-bottom: 10px;
+    grid-column: 1 / 3 ;
+    
+}
+
+.description::before {
+    content: "";
+    position: absolute;
+    width: 18%;
+    height: 1px;
+    background-color: black;
+    bottom: 19%;
+    margin-left: -7px;
+    opacity: 0.5;    
+}
+
