@@ -1,0 +1,54 @@
+body {
+    font: 1em sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.container img {
+    grid-row: 1/4;
+    grid-column: 2;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 40px;
+    
+}
+
+.card p{
+    grid-column: 2;
+    line-height: 25px;
+    font-size: 25px;
+    padding-right: 80px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.card i {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-left: 10px;
+    
+}
+
+.icon1 {
+    color:#5c97f8;
+
+}
+
+.icon2 {
+    color: #f47056;
+}
+
+.icon3 {
+    color:#6c7789;
+}
+.icon4 {
+    color:#8cf1bd;
+}
